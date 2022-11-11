@@ -5,3 +5,10 @@ export type Movie = {
   status: boolean;
   review?: string;
 };
+
+export type movieUpdater = Omit<Movie, "name" | "streaming" | "genre">;
+
+export type streamingCount = {
+  streaming: string;
+  movies: number;
+};
